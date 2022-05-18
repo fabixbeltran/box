@@ -1,7 +1,4 @@
 body{
-    display: grid;
-    height: 100vh;
-    place-items: center center;
     background: #E5E5E5;
     color:#61708B;
     font-family: Source sans pro, Arial, Helvetica, sans-serif;
