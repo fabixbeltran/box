@@ -72,7 +72,7 @@ h4{
 
 .uno{
     display: flex;
-    align-items: center
+    align-items: center;
 }
 
 .dos{
@@ -128,9 +128,30 @@ h4{
     padding-right: 8px;
 }
 
+.secondary-alt{
+    transition: all 1s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border: solid 1px #3370DD;
+    border-radius: 4px;
+    height: 42px;
+    color:#3370DD;
+    width: 100%;
+    margin-left: 2px;
+    margin-right: 2px;
+    font-size: 14px;
+    cursor:pointer;
+    transition: 0.5s;
+    text-transform: uppercase;
+    font-family: Source sans pro, Arial, Helvetica, sans-serif;
+    height: 32px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
 
-
-.secondary:hover{
+.secondary:hover,.secondary-alt:hover{
     background: #e0e5ec;
     border: solid #e0e5ec 1px;
     color: #8291ab;
@@ -147,7 +168,7 @@ h4{
 .tenedor{
     width:24px;
     height: 24px;
-    padding-right:8px;
+
 }
 .head-right{
     display:flex;
@@ -167,6 +188,7 @@ h4{
 }
 .mesa{
     line-height: 0em;
+    padding-left:8px;
 }
 .table{
     font-size: 13px;
@@ -210,4 +232,78 @@ h4{
 
 .column3{
     margin-left: 20px;
+}
+
+.usuario{
+    display:flex;
+    align-items: center;
+}
+
+.usuario-alt{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.desplegable{
+    width:24px;
+    height: 24px;
+    padding-right:8px;
+}
+
+
+.uno-desplegable{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+
+
+.accordion {
+    padding: 8px;
+    background-color: white;
+}
+
+.accordion .container {
+}
+
+.accordion .label {
+
+  cursor: pointer;
+}
+
+.accordion .label::before {
+
+  color: black;
+  position: absolute;
+  top: 50%;
+  right: -5px;
+  font-size: 30px;
+  transform: translateY(-50%);
+}
+
+.accordion .content {
+
+  background: white;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.accordion hr {
+  width: 100;
+  margin-left: 0;
+  border: 1px solid grey;
+}
+
+.accordion .container.active .content {
+  height: 95px;
+}
+
+.accordion .container.active .label::before {
+  content: '-';
+  font-size: 30px;
 }
