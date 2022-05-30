@@ -4,7 +4,17 @@ body{
     background: #ffffff;
     color:#61708B;
     font-family: Source sans pro, Arial, Helvetica, sans-serif;
-    padding-bottom: 200px;
+}
+
+.list-group{
+    background: #F4F5F6;
+    border: solid #E3E7EC 1px;
+    border-radius: 4px;
+    padding: 16px 8px 8px 8px;
+    width: 300px;
+    overflow-y: scroll;;
+    height:75vh;
+    
 }
 
 .list-group-item{
@@ -199,15 +209,6 @@ h4{
     transition: all 0.5s ease;
     width: 16px;
     height: 16px;
-}
-
-.list-group{
-    background: #F4F5F6;
-    border: solid #E3E7EC 1px;
-    border-radius: 4px;
-    padding: 16px 8px 8px 8px;
-    width: 300px;
-    height:75vh;
 }
 
 .column-head{
