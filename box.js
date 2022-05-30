@@ -1,14 +1,23 @@
 //Code for box of boxes counter 
 
-const boxCount = document.getElementById('boxes');
-const directChildren = boxCount.children.length;
-console.log(directChildren); // 👉️ 2
+function updateCounter(){
+    
+    updateColumnCounter('boxes',"progressCounter")
+    updateColumnCounter('boxesFullfilment',"awaitingCount")
+    updateColumnCounter('boxesReady',"checkoutCount")
+    
+}
 
+function updateColumnCounter(columnId,counterId){
+    const boxCount = document.getElementById(columnId);
+    const directChildren = boxCount.children.length;
+    console.log(directChildren,"Direct Children"); // 👉️ 2
+    
+    var redCounter = document.getElementById(counterId)
+    redCounter.innerText = directChildren
+}
 
-var redCounter = document.getElementById("progressCounter")
-console.log(redCounter)
-redCounter.innerText = directChildren
-
+updateCounter()
 
 //Code for drag and drop
 
@@ -21,7 +30,10 @@ Sortable.create(boxes,{
         name: "saraza"
     },
     animation: 300,
-    
+    onEnd: function (/**Event*/evt, /**Event*/originalEvent) {
+        console.log("cualquiera")
+        updateCounter()
+	},
 });
 
 Sortable.create(boxesFullfilment,{
@@ -29,6 +41,10 @@ Sortable.create(boxesFullfilment,{
         name: "saraza"
     },
     animation: 300,
+    onEnd: function (/**Event*/evt, /**Event*/originalEvent) {
+        console.log("cualquiera")
+        updateCounter()
+	},
 });
 
 Sortable.create(boxesReady,{
@@ -36,6 +52,10 @@ Sortable.create(boxesReady,{
         name: "saraza"
     },
     animation: 300,
+    onEnd: function (/**Event*/evt, /**Event*/originalEvent) {
+        console.log("cualquiera")
+        updateCounter()
+	},
 });
 
 
