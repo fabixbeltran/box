@@ -6,6 +6,7 @@ body{
     font-family: Source sans pro, Arial, Helvetica, sans-serif;
     padding-bottom: 200px;
 }
+
 .list-group-item{
     width: 280px;
     box-shadow: 0px 1px 5px 0px #8B93A299;
@@ -45,17 +46,12 @@ body{
 }
 
 
-
-
-
-
 .blanco{
     background:white;
     border-radius: 0 0 4px 4px;
     padding: 0 8px 0 8px;
-
-
 }
+
 h1{
     font-size: 25px;
     color:#374561;
@@ -79,11 +75,12 @@ h4{
     display: flex;
     justify-content: space-around;
 }
+
 .tres{
     display: flex;
     margin-left: 4px;
-
 }
+
 .primary{
     background: #3370DD;
     border: solid 1px #3370DD;
@@ -100,9 +97,10 @@ h4{
     font-family: Source sans pro, Arial, Helvetica, sans-serif;
     height: 32px;
 }
+
 .primary:hover{
     background: #1D4FA8;
-    border: solid #1D4FA8 1px;
+    border: solid #1D4FA8 1px;    
 }
 
 .secondary{
@@ -157,7 +155,10 @@ h4{
     color: #8291ab;
 }
 
-.secondary:hover > .arrow { transform: translateX(5px); color: white; }
+.secondary:hover > .arrow { 
+    transform: translateX(5px);
+}
+
 
 .basket{
     width:24px;
@@ -168,8 +169,8 @@ h4{
 .tenedor{
     width:24px;
     height: 24px;
-
 }
+
 .head-right{
     display:flex;
     align-items: center;
@@ -207,13 +208,36 @@ h4{
     padding: 16px 8px 8px 8px;
     width: 300px;
     height:75vh;
-
 }
 
 .column-head{
     display: flex;
 }
 .counter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #EC695C;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: white;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.counter2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #EC695C;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: white;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.counter3{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -267,11 +291,8 @@ h4{
     background-color: white;
 }
 
-.accordion .container {
-}
 
 .accordion .label {
-
   cursor: pointer;
 }
 
@@ -304,6 +325,5 @@ h4{
 }
 
 .accordion .container.active .label::before {
-  content: '-';
   font-size: 30px;
 }
